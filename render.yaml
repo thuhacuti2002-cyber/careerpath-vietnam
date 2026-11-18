@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: careerpath-vietnam
+    runtime: node
+    plan: starter
+    region: singapore
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DATABASE_PATH
+        value: /var/data/careerpath.sqlite
+      - key: CLIENT_ORIGIN
+        value: https://careerpath-vietnam.onrender.com
+    disk:
+      name: careerpath-data
+      mountPath: /var/data
+      sizeGB: 1

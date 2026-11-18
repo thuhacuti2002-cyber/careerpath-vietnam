@@ -1,0 +1,27 @@
+export const questions = [
+  {id:1, group:"RIASEC", code:"R", q:"Bạn thích tự tay lắp ráp, sửa chữa hoặc tạo ra một sản phẩm hữu hình.", hint:"Thực tế (Realistic)"},
+  {id:2, group:"RIASEC", code:"I", q:"Bạn thích tìm nguyên nhân, phân tích dữ liệu và giải câu đố khó.", hint:"Nghiên cứu (Investigative)"},
+  {id:3, group:"RIASEC", code:"A", q:"Bạn thích sáng tạo hình ảnh, câu chuyện, âm nhạc hoặc ý tưởng mới.", hint:"Nghệ thuật (Artistic)"},
+  {id:4, group:"RIASEC", code:"S", q:"Bạn thấy vui khi hướng dẫn, hỗ trợ hoặc giúp người khác tiến bộ.", hint:"Xã hội (Social)"},
+  {id:5, group:"RIASEC", code:"E", q:"Bạn thích thuyết phục, khởi xướng dự án hoặc dẫn dắt một nhóm.", hint:"Quản lý (Enterprising)"},
+  {id:6, group:"RIASEC", code:"C", q:"Bạn thích sắp xếp thông tin, làm việc có quy trình và kiểm tra độ chính xác.", hint:"Nghiệp vụ (Conventional)"},
+  {id:7, group:"Kỹ năng", code:"logic", q:"Tôi có thể chia một vấn đề phức tạp thành các phần nhỏ để xử lý.", hint:"Tư duy logic"},
+  {id:8, group:"Kỹ năng", code:"data", q:"Tôi tự tin đọc bảng biểu, nhận ra xu hướng và rút ra kết luận.", hint:"Phân tích dữ liệu"},
+  {id:9, group:"Kỹ năng", code:"writing", q:"Tôi diễn đạt ý tưởng rõ ràng bằng văn bản.", hint:"Viết và biên tập"},
+  {id:10, group:"Kỹ năng", code:"visual", q:"Tôi có khả năng cảm nhận bố cục, màu sắc và trải nghiệm người dùng.", hint:"Tư duy thị giác"},
+  {id:11, group:"Kỹ năng", code:"tech", q:"Tôi thích tìm hiểu công cụ số, phần mềm hoặc cách công nghệ vận hành.", hint:"Công nghệ"},
+  {id:12, group:"Kỹ năng", code:"people", q:"Tôi lắng nghe tốt và phối hợp hiệu quả với nhiều kiểu người.", hint:"Giao tiếp"},
+  {id:13, group:"Kỹ năng", code:"lead", q:"Tôi có thể lên kế hoạch, phân công và theo dõi tiến độ.", hint:"Tổ chức và lãnh đạo"},
+  {id:14, group:"Kỹ năng", code:"research", q:"Tôi kiên nhẫn tìm kiếm, đối chiếu và đánh giá độ tin cậy của nguồn tin.", hint:"Nghiên cứu"},
+  {id:15, group:"Kỹ năng", code:"adapt", q:"Tôi học công cụ hoặc kiến thức mới khá nhanh.", hint:"Thích nghi và tự học"},
+  {id:16, group:"Giá trị", code:"stability", q:"Tôi ưu tiên môi trường làm việc ổn định, quy trình và kỳ vọng rõ ràng.", hint:"Ổn định"},
+  {id:17, group:"Giá trị", code:"impact", q:"Tôi muốn công việc tạo tác động tích cực cho cộng đồng.", hint:"Ý nghĩa xã hội"},
+  {id:18, group:"Giá trị", code:"autonomy", q:"Tôi muốn có quyền chủ động và không gian tự quyết trong công việc.", hint:"Tự chủ"},
+  {id:19, group:"Giá trị", code:"growth", q:"Tôi coi trọng cơ hội học hỏi, thăng tiến và thử thách.", hint:"Phát triển"},
+  {id:20, group:"Giá trị", code:"income", q:"Thu nhập cạnh tranh là một yếu tố quan trọng với tôi.", hint:"Thu nhập"},
+  {id:21, group:"Giá trị", code:"creativity", q:"Tôi muốn công việc cho phép thử nghiệm và tạo ra ý tưởng mới.", hint:"Sáng tạo"},
+  {id:22, group:"Giá trị", code:"balance", q:"Tôi ưu tiên sự cân bằng giữa công việc, học tập và cuộc sống.", hint:"Cân bằng"},
+  {id:23, group:"Giá trị", code:"team", q:"Tôi thích môi trường hợp tác, chia sẻ kiến thức và làm việc nhóm.", hint:"Đồng đội"},
+  {id:24, group:"Giá trị", code:"recognition", q:"Tôi có động lực khi thành quả được ghi nhận rõ ràng.", hint:"Ghi nhận"}
+];
+export const scaleLabels = ["Rất không giống tôi","Không giống tôi","Phân vân","Khá giống tôi","Rất giống tôi"];

@@ -1,0 +1,10 @@
+import {Router} from 'express';
+import {randomUUID} from 'node:crypto';
+import {z} from 'zod';
+import db from '../db.js';
+import {requireAuth} from '../middleware/auth.js';
+const router=Router();
+const schema=z.object({answers:z.record(z.string(),z.number().int().min(1).max(5)),result:z.record(z.string(),z.any())});
+router.post('/',requireAuth,(req,res)=>{const p=schema.safeParse(req.body);if(!p.success)return res.status(400).json({error:'Dữ liệu bài đánh giá không hợp lệ.'});db.prepare('INSERT INTO assessments(id,user_id,answers_json,result_json,created_at) VALUES(?,?,?,?,?)').run(randomUUID(),req.user.id,JSON.stringify(p.data.answers),JSON.stringify(p.data.result),new Date().toISOString());res.status(201).json({ok:true});});
+router.get('/latest',requireAuth,(req,res)=>{const row=db.prepare('SELECT answers_json,result_json,created_at FROM assessments WHERE user_id=? ORDER BY created_at DESC LIMIT 1').get(req.user.id);res.json(row?{answers:JSON.parse(row.answers_json),result:JSON.parse(row.result_json),createdAt:row.created_at}:null);});
+export default router;
